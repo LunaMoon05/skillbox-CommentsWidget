@@ -1,1 +1,2 @@
-# skillbox-CommentsWidget
+h1 Виджет комментариев на react + redux
+
