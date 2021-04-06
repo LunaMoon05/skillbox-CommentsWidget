@@ -1,0 +1,53 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  &:not(:last-child) {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid grey;
+  }
+}
+
+.textHeader {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.date {
+  display: flex;
+  margin-left: auto;
+}
+
+.picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: .4rem .5rem 0px 0px;
+  background-color: #ffcc00;
+}
+
+.name {
+  font-size: 18px;
+  text-align: left;
+}
+
+.text {
+  padding-left: 3rem;
+  max-width: 750px;
+}
+
+.delete {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('./delete.svg');
+  margin-left: 1rem;
+}

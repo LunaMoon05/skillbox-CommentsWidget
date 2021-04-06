@@ -1,0 +1,75 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.error {
+  width: fit-content;
+  color: red;
+  opacity: 0;
+  margin-bottom: .5rem;
+}
+
+[isvalid='false'] {
+  input, textarea, select {
+    border: 1px solid red;
+    color: red;
+  }
+  .error {
+    opacity: 1;
+  }
+}
+
+.textarea {
+  width: 98%;
+  height: 100px;
+  resize: none;
+  border-radius: 2px;
+  padding: .7rem .6rem;
+  font-size: 20px;
+  outline: none;
+}
+
+.input {
+  width: 25%;
+  border-radius: 2px;
+  padding: .5rem;
+  font-size: 20px;
+  outline: none;
+  margin-bottom: .8rem;
+  border: 1px solid black;
+}
+
+.button {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: .8rem;
+  transition: .2s linear background, .2s linear border, .2s linear color;
+  margin: 1rem 0px;
+  &:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    outline: none;
+  }
+}
